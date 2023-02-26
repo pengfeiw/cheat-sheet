@@ -247,3 +247,17 @@ $ history
 # shutdown – Shutdown or reboot the system
 # *********************************************************************************
 ```
+
+## search files
+```bash
+# The locate program performs a rapid database search of pathnames
+$ locate <filename>
+# Update the database for `locate` command.Normally system will auto run updatedb once a day
+$ sudo updatedb
+# find all directories in home path 
+$ find ~ -type d
+# find all files in home path
+$ find ~ -type f
+# find all jpg files which size is greater then 1M in home directory 
+$ find ~ -type f -name "*.JPG" -size +1M
+```
