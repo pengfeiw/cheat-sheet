@@ -3,7 +3,7 @@
 ## working with commands
 ```bash
 # *********************************************************************************
-# There are for type commands:
+# There are four type commands:
 #   1. Executable program: like all those files in /usr/bin. Programs can be compiled binaries such as programs written in C and C++.
 #   2. Command built into shell itself. Such as cd.
 #   3. shell function.
