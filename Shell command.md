@@ -173,8 +173,7 @@ ls: cannot access words.txt: No such file or directory
 $ ls -l "two words.txt"
 -rw-rw-r-- 1 me me 18 2016-02-20 13:03 two words.txt
 $ mv "two words.txt" two_words.txt
-# parameter expansion, arithmetic expansion, and command substitution still
-take place within double quotes.
+# parameter expansion, arithmetic expansion, and command substitution still take place within double quotes.
 $ echo "$USER $((2+2)) $(cal)"
 # not remove extra spaces in our text
 $ echo this is a   test
@@ -182,8 +181,8 @@ this is a test
 $ echo "this is a   test"
 this is a   test
 # single quotes: suppress all expansions
-$ echo "text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"
-text ~/*.txt {a,b} foo 4 me
+$ echo 'text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER'
+text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER
 # escaping characters: \
 $ echo "The balance for user $USER is: \$5.00"
 ```
